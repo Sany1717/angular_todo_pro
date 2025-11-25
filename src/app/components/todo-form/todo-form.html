@@ -1,1 +1,15 @@
-<p>todo-form works!</p>
+<form (ngSubmit)="submit()">
+  <div>
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Title" required />
+  </div>
+  <div>
+    <input type="text" name="description" [(ngModel)]="description" placeholder="Description (optional)" />
+  </div>
+  <div>
+    <label><input type="checkbox" name="done" [(ngModel)]="done" /> Done</label>
+  </div>
+  <div style="margin-top: 10px;">
+    <button type="submit" class="primary">{{ editing ? 'Update' : 'Add' }}</button>
+    <button type="button" *ngIf="editing" (click)="cancelEdit()">Cancel</button>
+  </div>
+</form>

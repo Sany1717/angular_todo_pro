@@ -1,1 +1,19 @@
-<p>todo-list works!</p>
+<h2>Todos</h2>
+
+<ul *ngIf="todos.length; else empty">
+  <li *ngFor="let t of todos" [class.done]="t.done">
+    <input type="checkbox" [checked]="t.done" (change)="toggle.emit({ id: t.id, done: $event.target.checked })" />
+
+    <strong>{{ t.title }}</strong>
+    <small> - {{ t.description }}</small>
+
+    <div class="actions">
+      <button (click)="edit.emit(t)">Edit</button>
+      <button (click)="delete.emit(t.id)">Delete</button>
+    </div>
+  </li>
+</ul>
+
+<ng-template #empty>
+  <div>No todos yet — add one above.</div>
+</ng-template>
