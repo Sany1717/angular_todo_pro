@@ -1,3 +1,58 @@
+# 📌 angular-todo-pro  
+A modern **Angular Standalone Todo Application** with full **CRUD**, **LocalStorage persistence**, and a clean UI.  
+This project is built using the latest Angular standalone architecture — no NgModules required.
+
+---
+
+## 🚀 Features
+
+### ✔ Add Todo  
+Create new tasks with:  
+- Title  
+- Description  
+- Done status  
+
+### ✔ Edit Todo  
+- Edit any existing todo  
+- Form auto-fills during edit mode  
+- Cancel editing anytime  
+
+### ✔ Delete Todo  
+- Delete individual tasks  
+- Confirmation dialog added  
+- Auto-update LocalStorage  
+
+### ✔ Toggle Done  
+- Checkbox to mark todo as completed  
+- UI shows strike-through for completed tasks  
+
+### ✔ LocalStorage Support  
+- All todos are saved permanently in the browser  
+- Data remains even after page reload  
+- No backend required  
+
+### ✔ Standalone Angular Architecture  
+- No NgModules  
+- Lightweight  
+- Modern Angular structure  
+- Easy to understand & maintain  
+
+---
+
+## 🛠️ Technologies Used
+- **Angular 17+ Standalone Components**
+- **TypeScript**
+- **LocalStorage API**
+- **HTML / CSS**
+- **Component Communication (Input/Output)**
+- **Service-based State Management**
+
+---
+
+## 📂 Project Structure
+
+
+
 # AngularTodoPro
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
